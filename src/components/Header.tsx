@@ -5,7 +5,9 @@ import Login from "./Login";
 const Header = () => {
   const [isLogin, loginCheck] = useLoginCheck();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    console.log(process.env.GATSBY_APP_ID);
+  }, []);
 
   return (
     <>
