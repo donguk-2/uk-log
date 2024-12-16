@@ -6,14 +6,13 @@ interface IButtonProps {
   customStyle?: string;
 }
 
-const Button = ({ children, handleClick }: IButtonProps) => {
-  const customStyle = "";
+const Button = ({ children, handleClick, customStyle }: IButtonProps) => {
   return (
     <>
       <button
         type="button"
         onClick={handleClick}
-        className={`w-[100%] h-[48px] bg-lime-400 mt-[15px] text-[24px]`}
+        className={`w-[100%] h-[48px] bg-mainColor text-[16px] text-white rounded-[4px] ${customStyle}`}
       >
         {children}
       </button>

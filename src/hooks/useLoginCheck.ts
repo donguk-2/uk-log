@@ -7,7 +7,7 @@ const useLoginCheck = (): ReturnType => {
 
   const handler = useCallback((id: string, pw: string) => {
     setIsLogin(
-      id === process.env.REACT_APP_ID && pw === process.env.REACT_APP_PASSWORD
+      id === process.env.GATSBY_APP_ID && pw === process.env.GATSBY_APP_PASSWORD
     );
   }, []);
   return [isLogin, handler];
