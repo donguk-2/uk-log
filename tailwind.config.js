@@ -52,10 +52,17 @@ module.exports = {
       },
       backgroundColor: {
         modalBgColor: "rgba(249, 249, 249, 0.85)",
+        mainColor: "#0d1117",
       },
       boxShadow: {
         modalBoxShadow: "rgba(0, 0, 0, 0.09) 0px 2px 12px 0px",
       },
+    },
+    screens: {
+      sl1: "770px",
+      sl2: "1060px",
+      sl3: "1440px",
+      sl4: "1920px",
     },
   },
   plugins: [],

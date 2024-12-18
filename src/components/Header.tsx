@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex w-screen p-5 items-center">
+      <div className="flex w-full py-[20px] items-center">
         <div className="">UKLog</div>
         <div className="flex ml-5 gap-5">
           <div>전체글</div>
@@ -24,6 +24,7 @@ const Header = () => {
               handleClick={() => {
                 setIsLogin(false), setId(""), setPw("");
               }}
+              customStyle="px-[8px] py-[4px] h-fit"
             >
               로그아웃
             </Button>

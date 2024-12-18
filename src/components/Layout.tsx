@@ -1,13 +1,19 @@
-import React from "react";
+import React, { Children, ReactNode } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
-const Layout = () => {
-  const IsLogin = React.createContext(false);
+interface ILayoutProps {
+  children: ReactNode;
+}
+
+const Layout = ({ children }: ILayoutProps) => {
   return (
     <>
-      <IsLogin.Provider value={false}>
+      <div className="sl1:w-full sl2:w-[1024px] sl3:w-[1376px] sl4:w-[1920px] ml-auto mr-auto h-auto min-h-screen">
         <Header />
-      </IsLogin.Provider>
+        {children}
+      </div>
+      {/* <Footer /> */}
     </>
   );
 };
